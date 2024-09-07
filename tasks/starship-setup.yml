@@ -1,0 +1,11 @@
+- name: Install starship
+  become: no
+  homebrew:
+    name: homebrew/cask/font-hack-nerd-font
+    state: present
+  homebrew:
+    name: homebrew/starship
+    state: present
+  tags:
+    - install
+    - productivity

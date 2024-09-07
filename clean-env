@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+brew uninstall alacritty font-hack-nerd-font starship
+
 # Undo brew - this should be the last step
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
