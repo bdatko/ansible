@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Undo brew - this should be the last step
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
