@@ -8,3 +8,4 @@
         update_homebrew: True
   tasks:
     - import_tasks: tasks/alacritty-setup.yml
+    - import_tasks: tasks/starship-setup.yml
