@@ -1,0 +1,10 @@
+- name: Install Alacritty
+  become: no
+  homebrew:
+    name: homebrew/cask/alacritty
+    state: present
+    install_options: no-quarantine
+  tags:
+    - install
+    - alacritty
+    - productivity

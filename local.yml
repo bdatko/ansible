@@ -1,0 +1,10 @@
+- hosts: localhost
+  become: no
+  pre_tasks:
+    - name: update brew
+      become: no
+      changed_when: False
+      homebrew: 
+        update: True
+  tasks:
+    - import_tasks: tasks/alacritty-setup.yml
