@@ -5,6 +5,6 @@
       become: no
       changed_when: False
       homebrew: 
-        update: True
+        update_homebrew: True
   tasks:
     - import_tasks: tasks/alacritty-setup.yml
