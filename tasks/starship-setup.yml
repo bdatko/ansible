@@ -8,4 +8,5 @@
     state: present
   tags:
     - install
-    - productivity
+    - core
+    - starship

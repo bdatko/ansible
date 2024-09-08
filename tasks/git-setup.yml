@@ -1,0 +1,20 @@
+- name: Git personal setup email
+  git_config:
+    name: user.email
+    scope: global
+    value: "8881506+bdatko@users.noreply.github.com"
+  tags:
+    - git-personal
+- name: Git personal setup name
+  git_config:
+    name: user.name
+    scope: global
+    value: "Ben Datko"
+  tags:
+    - git-personal
+- name: Git personal setup editor
+  git_config:
+    name: coe.editor
+    scope: global
+    value: nvim
+

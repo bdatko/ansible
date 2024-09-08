@@ -1,0 +1,9 @@
+- name: Install neovim
+  become: no
+  homebrew:
+    name: neovim
+    state: present
+  tags:
+    - install
+    - core
+    - neovim
