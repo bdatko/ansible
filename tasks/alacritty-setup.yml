@@ -4,6 +4,9 @@
     name: homebrew/cask/alacritty
     state: present
     install_options: no-quarantine
+  homebrew:
+    name: homebrew/cask/font-ibm-plex-mono
+    state: present
   tags:
     - install
     - alacritty
