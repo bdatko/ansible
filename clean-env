@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
+IBM_FONTS_DIR="/Users/$USER/Library/Fonts"
+
 brew uninstall alacritty font-ibm-plex-mono font-hack-nerd-font starship stow neovim
+
+if compgen -G $IBM_FONTS_DIR/IBMPlexMono-* > /dev/null; then
+	for font in $IBM_FONTS_DIR/IBMPlexMono-*; do
+		rm $font
+	done
+fi
 
 # Undo brew - this should be the last step
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
