@@ -1,8 +1,13 @@
-- name: Install starship
+- name: Install Nerd Fonts
   become: no
   homebrew:
     name: homebrew/cask/font-hack-nerd-font
     state: present
+  tags:
+   - install
+   - core
+   - starship
+- name: Install starship
   homebrew:
     name: starship
     state: present
