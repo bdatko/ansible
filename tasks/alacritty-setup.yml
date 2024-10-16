@@ -4,6 +4,12 @@
     name: homebrew/cask/alacritty
     state: present
     install_options: no-quarantine
+  tags:
+    - install
+    - alacritty
+    - core
+- name: Install Nerd Fonts
+  become: no
   homebrew:
     name: homebrew/cask/font-ibm-plex-mono
     state: present
